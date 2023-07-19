@@ -1,0 +1,20 @@
+{
+  "fruitsBananaName": "Banana",
+  "fruitsAvocadoName": "Avocado",
+  "fruitsMangoName": "Mango",
+  "fruitsHeadline": "Fruits",
+  "fruitsGrownInCalifornia": "Grown in USA",
+  "fruitsGrownInGermany": "Grown in Germany",
+  "unit": "pcs",
+  "johnDoeFarm": "John Doe's Farm",
+  "widgetbookFarm": "Widgetbook Farm",
+
+  "basketContinueToShipping": "Continue to shipping",
+  "basketHeadline": "Basket",
+  "basketTotal": "Total",
+  "basketSubtotal": "Subtotal",
+  "basketDelivery": "Delivery",
+  "basketEmpty": "Your Basket is empty",
+  "basketEmptyMessage": "The basket is a gateway to a world of infinite possibilities, patiently awaiting your selection to bring it to life.",
+  "startShopping": "Start shopping"
+}
