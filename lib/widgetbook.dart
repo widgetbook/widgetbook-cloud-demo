@@ -54,11 +54,14 @@ class WidgetbookApp extends StatelessWidget {
               style: theme.typography.bodyMedium16,
               child: AppTheme(
                 data: theme,
-                child: child,
+                child: SafeArea(child: child),
               ),
             ),
           ),
         ),
+      ],
+      integrations: [
+        WidgetbookCloudIntegration(),
       ],
     );
   }
