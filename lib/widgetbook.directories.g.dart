@@ -190,7 +190,7 @@ final directories = [
             useCases: [
               WidgetbookUseCase(
                 name: 'Default',
-                builder: (context) => fuitCard(context),
+                builder: (context) => fruitCard(context),
               ),
             ],
           ),

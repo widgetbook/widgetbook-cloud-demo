@@ -70,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                       return AlignedGridView.count(
                         padding: EdgeInsets.zero,
                         crossAxisCount: max(1, constraints.maxWidth ~/ 300),
-                        mainAxisSpacing: AppTheme.of(context).spacing.medium,
+                        mainAxisSpacing: AppTheme.of(context).spacing.extraLarge,
                         crossAxisSpacing: AppTheme.of(context).spacing.medium,
                         itemCount: fruits.length,
                         itemBuilder: (context, index) {

@@ -13,7 +13,7 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
   designLink:
       'https://www.figma.com/file/EXuEpwiyksLAejYX1qr1v4/Demo-App-featuring-variables?type=design&node-id=60-3200&mode=dev',
 )
-Widget fuitCard(BuildContext context) {
+Widget fruitCard(BuildContext context) {
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: FruitCard(
@@ -47,10 +47,10 @@ class FruitCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(
-                      AppTheme.of(context).radius.small,
+                      AppTheme.of(context).radius.extraLarge,
                     ),
                     topRight: Radius.circular(
-                      AppTheme.of(context).radius.small,
+                      AppTheme.of(context).radius.extraLarge,
                     ),
                   ),
                   border: Border.all(

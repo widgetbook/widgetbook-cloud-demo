@@ -10,7 +10,7 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 )
 Widget buildIconButtonUseCase(BuildContext context) {
   return AddBasketButton(
-    icon: Icons.add,
+    icon: Icons.shopping_bag_outlined,
     onPressed: () {},
   );
 }
@@ -40,6 +40,7 @@ class AddBasketButton extends StatelessWidget {
           ),
           border: Border.all(
             color: AppTheme.of(context).border.highEmphasis,
+            width: 3,
           ),
         ),
         child: Icon(
