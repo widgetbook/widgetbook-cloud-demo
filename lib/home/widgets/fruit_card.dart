@@ -47,10 +47,10 @@ class FruitCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(
-                      AppTheme.of(context).radius.extraLarge,
+                      AppTheme.of(context).radius.small,
                     ),
                     topRight: Radius.circular(
-                      AppTheme.of(context).radius.extraLarge,
+                      AppTheme.of(context).radius.small,
                     ),
                   ),
                   border: Border.all(

@@ -40,7 +40,6 @@ class AddBasketButton extends StatelessWidget {
           ),
           border: Border.all(
             color: AppTheme.of(context).border.highEmphasis,
-            width: 3,
           ),
         ),
         child: Icon(
