@@ -6,7 +6,7 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
   name: 'Add',
   type: QuantityButton,
   designLink:
-      'https://www.figma.com/file/EXuEpwiyksLAejYX1qr1v4/Demo-App-featuring-variables?type=design&node-id=74-1996&mode=dev',
+      'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=74-1996&mode=dev',
 )
 Widget buildQuantityButtonAddUseCase(BuildContext context) {
   return QuantityButton.add(
@@ -18,7 +18,7 @@ Widget buildQuantityButtonAddUseCase(BuildContext context) {
   name: 'Remove',
   type: QuantityButton,
   designLink:
-      'https://www.figma.com/file/EXuEpwiyksLAejYX1qr1v4/Demo-App-featuring-variables?type=design&node-id=74-1996&mode=dev',
+      'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=74-1996&mode=dev',
 )
 Widget buildQuantityButtonRemoveUseCase(BuildContext context) {
   return QuantityButton.remove(

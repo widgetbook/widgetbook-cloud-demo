@@ -17,7 +17,7 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
   name: 'filled',
   type: BasketScreen,
   designLink:
-  'https://www.figma.com/file/EXuEpwiyksLAejYX1qr1v4/Demo-App-featuring-variables?type=design&node-id=60-1089&mode=dev',
+  'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=60-1089&mode=dev',
 )
 Widget buildFilledBasketScreenUseCase(BuildContext context) {
   final mango = getMango(context);
@@ -47,7 +47,7 @@ Widget buildFilledBasketScreenUseCase(BuildContext context) {
   name: 'empty',
   type: BasketScreen,
   designLink:
-  'https://www.figma.com/file/EXuEpwiyksLAejYX1qr1v4/Demo-App-featuring-variables?type=design&node-id=74-2186&mode=dev',
+  'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=74-2186&mode=dev',
 )
 Widget buildEmptyBasketScreenUseCase(BuildContext context) {
   return BasketScope(
