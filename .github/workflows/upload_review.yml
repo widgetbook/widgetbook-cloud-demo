@@ -2,6 +2,7 @@ name: Upload review
 on:
   pull_request:
     branches:
+      - staging
       - main
 jobs:
   build:
