@@ -7,7 +7,12 @@ import 'package:groceries_app/theme/theme.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 
-@UseCase(name: 'Default', type: AppBar)
+@UseCase(
+  name: 'Default',
+  type: AppBar,
+  designLink:
+      'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=54-420&mode=design&t=4w5bXgsUfAfA25Hm-4',
+)
 Widget appBarUseCase(BuildContext context) {
   return AppBar(
     title: context.knobs.string(
