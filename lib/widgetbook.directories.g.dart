@@ -43,6 +43,69 @@ import 'package:widgetbook/widgetbook.dart';
 
 final directories = [
   WidgetbookFolder(
+    name: 'core',
+    children: [
+      WidgetbookComponent(
+        name: 'AppBar',
+        useCases: [
+          WidgetbookUseCase(
+            name: 'Default',
+            builder: (context) => appBarUseCase(context),
+          ),
+        ],
+      ),
+      WidgetbookComponent(
+        name: 'Badge',
+        useCases: [
+          WidgetbookUseCase(
+            name: 'Default',
+            builder: (context) => badge(context),
+          ),
+        ],
+      ),
+      WidgetbookComponent(
+        name: 'Card',
+        useCases: [
+          WidgetbookUseCase(
+            name: 'Default',
+            builder: (context) => card(context),
+          ),
+        ],
+      ),
+      WidgetbookComponent(
+        name: 'QuantityButton',
+        useCases: [
+          WidgetbookUseCase(
+            name: 'Add',
+            builder: (context) => buildQuantityButtonAddUseCase(context),
+          ),
+          WidgetbookUseCase(
+            name: 'Remove',
+            builder: (context) => buildQuantityButtonRemoveUseCase(context),
+          ),
+        ],
+      ),
+      WidgetbookComponent(
+        name: 'PrimaryButton',
+        useCases: [
+          WidgetbookUseCase(
+            name: 'default',
+            builder: (context) => buildContinueButtonUseCase(context),
+          ),
+        ],
+      ),
+      WidgetbookComponent(
+        name: 'AppIcon',
+        useCases: [
+          WidgetbookUseCase(
+            name: 'Default',
+            builder: (context) => buildAppIconUseCase(context),
+          ),
+        ],
+      ),
+    ],
+  ),
+  WidgetbookFolder(
     name: 'basket',
     children: [
       WidgetbookFolder(
@@ -102,69 +165,6 @@ final directories = [
                 builder: (context) => buildEmptyBasketScreenUseCase(context),
               ),
             ],
-          ),
-        ],
-      ),
-    ],
-  ),
-  WidgetbookFolder(
-    name: 'core',
-    children: [
-      WidgetbookComponent(
-        name: 'AppBar',
-        useCases: [
-          WidgetbookUseCase(
-            name: 'Default',
-            builder: (context) => appBarUseCase(context),
-          ),
-        ],
-      ),
-      WidgetbookComponent(
-        name: 'Badge',
-        useCases: [
-          WidgetbookUseCase(
-            name: 'Default',
-            builder: (context) => badge(context),
-          ),
-        ],
-      ),
-      WidgetbookComponent(
-        name: 'Card',
-        useCases: [
-          WidgetbookUseCase(
-            name: 'Default',
-            builder: (context) => card(context),
-          ),
-        ],
-      ),
-      WidgetbookComponent(
-        name: 'QuantityButton',
-        useCases: [
-          WidgetbookUseCase(
-            name: 'Add',
-            builder: (context) => buildQuantityButtonAddUseCase(context),
-          ),
-          WidgetbookUseCase(
-            name: 'Remove',
-            builder: (context) => buildQuantityButtonRemoveUseCase(context),
-          ),
-        ],
-      ),
-      WidgetbookComponent(
-        name: 'PrimaryButton',
-        useCases: [
-          WidgetbookUseCase(
-            name: 'default',
-            builder: (context) => buildContinueButtonUseCase(context),
-          ),
-        ],
-      ),
-      WidgetbookComponent(
-        name: 'AppIcon',
-        useCases: [
-          WidgetbookUseCase(
-            name: 'Default',
-            builder: (context) => buildAppIconUseCase(context),
           ),
         ],
       ),
