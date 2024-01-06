@@ -4,6 +4,6 @@ This repository hosts a groceries demo application creatively called _Groceries 
 
 1. Run `flutter pub get`
 2. Run `flutter pub run build_runner watch -d`
-3. Run `flutter pub run -d macos -t lib/widgetbook.dart`
+3. Run `flutter run -d macos -t lib/widgetbook.dart`
 
 
