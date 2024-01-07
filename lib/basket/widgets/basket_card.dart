@@ -50,7 +50,7 @@ class BasketCard extends StatelessWidget {
         child: Row(
           children: [
             Container(
-              height: 100,
+              height: 200,
               width: 100,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(
