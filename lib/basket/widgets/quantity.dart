@@ -7,17 +7,17 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
   name: 'Default',
   type: Quantity,
   designLink:
-  'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=74-1996&mode=dev',
+      'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=74-1996&mode=dev',
 )
 Widget buildQuantityUseCase(BuildContext context) {
   return Quantity(
     value: context.knobs.double
         .slider(
-      label: 'Value',
-      initialValue: 2,
-      min: 0,
-      max: 1000,
-    )
+          label: 'Value',
+          initialValue: 2,
+          min: 0,
+          max: 1000,
+        )
         .toInt(),
   );
 }
@@ -41,7 +41,7 @@ class Quantity extends StatelessWidget {
         ),
         border: Border.all(
           color: AppTheme.of(context).border.highEmphasis,
-          width: 1,
+          width: 10,
         ),
       ),
       child: Text(
