@@ -25,18 +25,26 @@ class WidgetbookApp extends StatelessWidget {
         child: child,
       ),
       addons: [
+        AccessibilityAddon(),
+        AlignmentAddon(initialAlignment: Alignment.center),
+        //GridAddon(10),
+        InspectorAddon(enabled: true),
         LocalizationAddon(
           locales: AppLocalizations.supportedLocales,
           localizationsDelegates: AppLocalizations.localizationsDelegates,
           initialLocale: AppLocalizations.supportedLocales.last,
         ),
+        TextScaleAddon(scales: [1.0, 1.5, 2.0], initialScale: 1.0),
+        TimeDilationAddon(),
         DeviceFrameAddon(
           devices: [
             Devices.ios.iPhone13,
             Devices.ios.iPad,
+            Devices.android.samsungGalaxyS20,
           ],
           initialDevice: Devices.ios.iPhone13,
         ),
+        ZoomAddon(),
         ThemeAddon(
           themes: [
             WidgetbookTheme(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:groceries_app/theme/app_theme.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart';
+import 'package:widgetbook/widgetbook.dart';
 
 @UseCase(
   name: 'default',
@@ -11,17 +12,22 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 )
 Widget buildContinueButtonUseCase(BuildContext context) {
   return PrimaryButton(
-    content: AppLocalizations.of(context)!.basketContinueToShipping,
-  );
+      content: AppLocalizations.of(context)!.basketContinueToShipping,
+      buttonColor: context.knobs.color(
+        label: 'Button color',
+        initialValue: AppTheme.of(context).surface.brand,
+      ));
 }
 
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton({
     super.key,
     required this.content,
+    required this.buttonColor,
   });
 
   final String content;
+  final Color buttonColor;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +37,7 @@ class PrimaryButton extends StatelessWidget {
         horizontal: AppTheme.of(context).spacing.extraLarge,
       ),
       decoration: BoxDecoration(
-        color: AppTheme.of(context).surface.brand,
+        color: buttonColor,
         borderRadius: BorderRadius.circular(
           AppTheme.of(context).radius.full,
         ),

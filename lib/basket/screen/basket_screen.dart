@@ -12,12 +12,13 @@ import 'package:groceries_app/fixtures/fruits.dart';
 import 'package:groceries_app/models/fruit.dart';
 import 'package:groceries_app/theme/app_theme.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart';
+import 'package:widgetbook/widgetbook.dart';
 
 @UseCase(
   name: 'filled',
   type: BasketScreen,
   designLink:
-  'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=60-1089&mode=dev',
+      'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=60-1089&mode=dev',
 )
 Widget buildFilledBasketScreenUseCase(BuildContext context) {
   final mango = getMango(context);
@@ -47,7 +48,7 @@ Widget buildFilledBasketScreenUseCase(BuildContext context) {
   name: 'empty',
   type: BasketScreen,
   designLink:
-  'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=74-2186&mode=dev',
+      'https://www.figma.com/file/2KQWHOqLW3w0PlmBTuZT01/Widgetbook-Groceries-App-Demo?type=design&node-id=74-2186&mode=dev',
 )
 Widget buildEmptyBasketScreenUseCase(BuildContext context) {
   return BasketScope(
@@ -87,6 +88,10 @@ class BasketScreen extends StatelessWidget {
         const Expanded(child: EmptyBasketPlaceholder()),
         PrimaryButton(
           content: AppLocalizations.of(context)!.startShopping,
+          buttonColor: context.knobs.color(
+            label: 'Button color',
+            initialValue: AppTheme.of(context).surface.brand,
+          ),
         ),
       ],
     );
@@ -145,6 +150,10 @@ class BasketScreen extends StatelessWidget {
         ),
         PrimaryButton(
           content: AppLocalizations.of(context)!.basketContinueToShipping,
+          buttonColor: context.knobs.color(
+            label: 'Button color',
+            initialValue: AppTheme.of(context).surface.brand,
+          ),
         ),
       ],
     );

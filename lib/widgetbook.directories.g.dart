@@ -22,6 +22,7 @@ import 'package:groceries_app/basket/widgets/empty_basket_placeholder.dart';
 import 'package:groceries_app/basket/widgets/quantity.dart';
 import 'package:groceries_app/basket/widgets/summary.dart';
 import 'package:groceries_app/basket/widgets/widgets.dart';
+import 'package:groceries_app/basket/widgets/zoomable_image.dart';
 import 'package:groceries_app/core/app_bar.dart';
 import 'package:groceries_app/core/app_icon.dart';
 import 'package:groceries_app/core/badge.dart';
@@ -42,71 +43,6 @@ import 'package:groceries_app/widgetbook.spacing.dart';
 import 'package:widgetbook/widgetbook.dart';
 
 final directories = [
-  WidgetbookFolder(
-    name: 'basket',
-    children: [
-      WidgetbookFolder(
-        name: 'widgets',
-        children: [
-          WidgetbookComponent(
-            name: 'BasketCard',
-            useCases: [
-              WidgetbookUseCase(
-                name: 'Default',
-                builder: (context) => buildBasketCardUseCase(context),
-              ),
-            ],
-          ),
-          WidgetbookComponent(
-            name: 'EmptyBasketPlaceholder',
-            useCases: [
-              WidgetbookUseCase(
-                name: 'Default',
-                builder: (context) =>
-                    buildEmptyBasketPlaceholderUseCase(context),
-              ),
-            ],
-          ),
-          WidgetbookComponent(
-            name: 'Summary',
-            useCases: [
-              WidgetbookUseCase(
-                name: 'Default',
-                builder: (context) => buildSummaryUseCase(context),
-              ),
-            ],
-          ),
-          WidgetbookComponent(
-            name: 'Quantity',
-            useCases: [
-              WidgetbookUseCase(
-                name: 'Default',
-                builder: (context) => buildQuantityUseCase(context),
-              ),
-            ],
-          ),
-        ],
-      ),
-      WidgetbookFolder(
-        name: 'screen',
-        children: [
-          WidgetbookComponent(
-            name: 'BasketScreen',
-            useCases: [
-              WidgetbookUseCase(
-                name: 'filled',
-                builder: (context) => buildFilledBasketScreenUseCase(context),
-              ),
-              WidgetbookUseCase(
-                name: 'empty',
-                builder: (context) => buildEmptyBasketScreenUseCase(context),
-              ),
-            ],
-          ),
-        ],
-      ),
-    ],
-  ),
   WidgetbookFolder(
     name: 'core',
     children: [
@@ -165,6 +101,80 @@ final directories = [
           WidgetbookUseCase(
             name: 'Default',
             builder: (context) => buildAppIconUseCase(context),
+          ),
+        ],
+      ),
+    ],
+  ),
+  WidgetbookFolder(
+    name: 'basket',
+    children: [
+      WidgetbookFolder(
+        name: 'widgets',
+        children: [
+          WidgetbookComponent(
+            name: 'BasketCard',
+            useCases: [
+              WidgetbookUseCase(
+                name: 'Default',
+                builder: (context) => buildBasketCardUseCase(context),
+              ),
+            ],
+          ),
+          WidgetbookComponent(
+            name: 'ZoomableImage',
+            useCases: [
+              WidgetbookUseCase(
+                name: 'Default',
+                builder: (context) => buildZoomableImageUseCase(context),
+              ),
+            ],
+          ),
+          WidgetbookComponent(
+            name: 'EmptyBasketPlaceholder',
+            useCases: [
+              WidgetbookUseCase(
+                name: 'Default',
+                builder: (context) =>
+                    buildEmptyBasketPlaceholderUseCase(context),
+              ),
+            ],
+          ),
+          WidgetbookComponent(
+            name: 'Summary',
+            useCases: [
+              WidgetbookUseCase(
+                name: 'Default',
+                builder: (context) => buildSummaryUseCase(context),
+              ),
+            ],
+          ),
+          WidgetbookComponent(
+            name: 'Quantity',
+            useCases: [
+              WidgetbookUseCase(
+                name: 'Default',
+                builder: (context) => buildQuantityUseCase(context),
+              ),
+            ],
+          ),
+        ],
+      ),
+      WidgetbookFolder(
+        name: 'screen',
+        children: [
+          WidgetbookComponent(
+            name: 'BasketScreen',
+            useCases: [
+              WidgetbookUseCase(
+                name: 'filled',
+                builder: (context) => buildFilledBasketScreenUseCase(context),
+              ),
+              WidgetbookUseCase(
+                name: 'empty',
+                builder: (context) => buildEmptyBasketScreenUseCase(context),
+              ),
+            ],
           ),
         ],
       ),

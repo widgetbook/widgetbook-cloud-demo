@@ -1,11 +1,15 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'package:flutter/material.dart';
+// import 'package:groceries_app/basket/screen/basket_screen.dart';
 import 'package:groceries_app/core/app_icon.dart';
 import 'package:groceries_app/core/badge.dart' as core;
+// import 'package:groceries_app/fixtures/fruits.dart';
+// import 'package:groceries_app/home/home.dart';
 import 'package:groceries_app/theme/theme.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart';
+// import 'package:groceries_app/fixtures/fruits.dart';
 
 @UseCase(name: 'Default', type: AppBar)
 Widget appBarUseCase(BuildContext context) {
@@ -37,7 +41,16 @@ class AppBar extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const AppIcon(icon: Icons.menu_rounded),
+          const AppIcon(
+            icon: Icons.menu_rounded,
+//            onPressed: () {
+//              Navigator.of(context).push(
+            //              MaterialPageRoute(
+            //              builder: (context) => BasketScreen(fruits: getFruits(context)),
+            //          ),
+            //      );
+            //  },
+          ),
           Expanded(
             child: Align(
               alignment: Alignment.center,
