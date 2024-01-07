@@ -41,7 +41,7 @@ class Quantity extends StatelessWidget {
         ),
         border: Border.all(
           color: AppTheme.of(context).border.highEmphasis,
-          width: 10,
+          width: 1,
         ),
       ),
       child: Text(
