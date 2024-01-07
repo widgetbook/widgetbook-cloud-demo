@@ -22,6 +22,7 @@ import 'package:groceries_app/basket/widgets/empty_basket_placeholder.dart';
 import 'package:groceries_app/basket/widgets/quantity.dart';
 import 'package:groceries_app/basket/widgets/summary.dart';
 import 'package:groceries_app/basket/widgets/widgets.dart';
+import 'package:groceries_app/basket/widgets/zoomable_image.dart';
 import 'package:groceries_app/core/app_bar.dart';
 import 'package:groceries_app/core/app_icon.dart';
 import 'package:groceries_app/core/badge.dart';
@@ -30,6 +31,7 @@ import 'package:groceries_app/core/core.dart';
 import 'package:groceries_app/core/primary_button.dart';
 import 'package:groceries_app/core/quantity_button.dart';
 import 'package:groceries_app/fixtures/fruits.dart';
+import 'package:groceries_app/home/home.dart';
 import 'package:groceries_app/home/screen/home_screen.dart';
 import 'package:groceries_app/home/widgets/add_basket_button.dart';
 import 'package:groceries_app/home/widgets/fruit_card.dart';
@@ -117,6 +119,15 @@ final directories = [
               WidgetbookUseCase(
                 name: 'Default',
                 builder: (context) => buildBasketCardUseCase(context),
+              ),
+            ],
+          ),
+          WidgetbookComponent(
+            name: 'ZoomableImage',
+            useCases: [
+              WidgetbookUseCase(
+                name: 'Default',
+                builder: (context) => buildZoomableImageUseCase(context),
               ),
             ],
           ),
